@@ -21,24 +21,16 @@ import java.util.UUID;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.fail;
 
-@RunWith(SpringRunner.class)
+/*@RunWith(SpringRunner.class)
 @TestPropertySource(locations = "classpath:application-test.properties")
-@DataJpaTest
+@DataJpaTest*/
 public class RestaurantRepositoryIT {
-
+/*
     private static final String SAMPLE_NAME = "sampleName";
     private static final String SAMPLE_DESCRIPTION = "sampleDescription";
     private static final String SAMPLE_LATITUDE = "sampleLatitude";
     private static final String SAMPLE_LONGITUDE = "sampleLongitude";
     private static final String SAMPLE_VERY_LONG_NAME = "anotherSampleNameanotherSampleNameanotherSampleNameanotherSampleNameanotherSampleName";
-
-    private void assertRestaurant(Restaurant restaurant) {
-        assertThat(restaurant.getId()).isNotNull();
-        assertThat(restaurant.getName()).isEqualTo(SAMPLE_NAME);
-        assertThat(restaurant.getDescription()).isEqualTo(SAMPLE_DESCRIPTION);
-        assertThat(restaurant.getLatitude()).isEqualTo(SAMPLE_LATITUDE);
-        assertThat(restaurant.getLongitude()).isEqualTo(SAMPLE_LONGITUDE);
-    }
 
     @Autowired
     private TestEntityManager entityManager;
@@ -60,7 +52,7 @@ public class RestaurantRepositoryIT {
         assertThat(found.isPresent()).isTrue();
         assertRestaurant(found.get());
     }
-/*
+
     @Test(expected = InvalidDataAccessApiUsageException.class)
     public void should_throw_exception_when_find_by_null_id() {
         //Given
@@ -195,5 +187,11 @@ public class RestaurantRepositoryIT {
     }
 
 
-    */
+    private void assertRestaurant(Restaurant restaurant) {
+        assertThat(restaurant.getId()).isNotNull();
+        assertThat(restaurant.getName()).isEqualTo(SAMPLE_NAME);
+        assertThat(restaurant.getDescription()).isEqualTo(SAMPLE_DESCRIPTION);
+        assertThat(restaurant.getLatitude()).isEqualTo(SAMPLE_LATITUDE);
+        assertThat(restaurant.getLongitude()).isEqualTo(SAMPLE_LONGITUDE);
+    }*/
 }
