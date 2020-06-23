@@ -48,3 +48,4 @@ Alternatively, the `Scope for Mac` and `Scope for Windows` applications will als
 To access these results from Scope, simply click on the [Scratchpad](https://app.scope.dev/local-dev/) section in the left-hand menu. You'll get a time-ordered list of local test runs.
 
 When reviewing the tests in Scope, filter by `demotest` in the search bar to find the most interesting tests. Other tests, particularly those tagged as `dummy` may not contain useful, nor interesting information.
+
