@@ -121,8 +121,32 @@
                 <configuration>
                     <includes>
                         <include>**/*Test.java</include>
+                    </includes>
+                    <excludes>
+                        <exclude>**/*IT.java</exclude>
+                    </excludes>
+                    <rerunFailingTestsCount>5</rerunFailingTestsCount>
+                    <argLine>-javaagent:${settings.localRepository}/com/undefinedlabs/scope/scope-agent/${scope.agent.version}/scope-agent-${scope.agent.version}.jar</argLine>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.22.2</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.surefire</groupId>
+                        <artifactId>surefire-junit47</artifactId>
+                        <version>2.22.2</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <includes>
                         <include>**/*IT.java</include>
                     </includes>
+                    <excludes>
+                        <exclude>**/*Test.java</exclude>
+                    </excludes>
                     <rerunFailingTestsCount>5</rerunFailingTestsCount>
                     <argLine>-javaagent:${settings.localRepository}/com/undefinedlabs/scope/scope-agent/${scope.agent.version}/scope-agent-${scope.agent.version}.jar</argLine>
                 </configuration>
