@@ -18,7 +18,7 @@ public class BenchmarkTest {
 
     private static final String SAMPLE_TEXT = "sampleTest";
 
-    @Test
+    //@Test
     public void dummy_execute_JMH_TestMD5() throws RunnerException {
         final Options opt = new OptionsBuilder()
                 .include(BenchmarkTestMD5.class.getSimpleName())
@@ -37,7 +37,7 @@ public class BenchmarkTest {
         }
     }
 
-    @Test
+    //@Test
     public void dummy_execute_JMS_TestSHA1() throws RunnerException {
         final Options opt = new OptionsBuilder()
                 .include(BenchmarkTestSHA1.class.getSimpleName())
@@ -56,7 +56,7 @@ public class BenchmarkTest {
         }
     }
 
-    @Test
+    //@Test
     public void dummy_execute_JMH_TestSHA384() throws RunnerException {
         final Options opt = new OptionsBuilder()
                 .include(BenchmarkTestSHA384.class.getSimpleName())
@@ -75,7 +75,7 @@ public class BenchmarkTest {
         }
     }
 
-    @Test
+    //@Test
     public void dummy_execute_JMH_TestSHA512() throws RunnerException {
         final Options opt = new OptionsBuilder()
                 .include(BenchmarkTestSHA512.class.getSimpleName())
@@ -94,7 +94,7 @@ public class BenchmarkTest {
         }
     }
 
-    @Test
+    //@Test
     public void dummy_execute_JMH_TestMD2() throws RunnerException {
         final Options opt = new OptionsBuilder()
                 .include(BenchmarkTestMD2.class.getSimpleName())
