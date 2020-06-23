@@ -26,9 +26,9 @@ import static org.assertj.core.api.Assertions.fail;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
 
-@RunWith(SpringRunner.class)
+/*@RunWith(SpringRunner.class)*/
 public class RestaurantServiceIT {
-
+/*
     private static final String SAMPLE_NAME = "sampleName";
     private static final String ANOTHER_SAMPLE_NAME = "anotherSampleName";
     private static final UUID SAMPLE_UUID = UUID.randomUUID();
@@ -227,6 +227,6 @@ public class RestaurantServiceIT {
 
         //Then
         fail("Should throw exception");
-    }
+    }*/
 
 }

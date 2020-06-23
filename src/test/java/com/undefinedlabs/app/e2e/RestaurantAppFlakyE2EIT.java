@@ -12,11 +12,11 @@ import org.springframework.web.client.RestTemplate;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@RunWith(SpringRunner.class)
+/*@RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@TestPropertySource(locations = "classpath:application-test.properties")
+@TestPropertySource(locations = "classpath:application-test.properties")*/
 public class RestaurantAppFlakyE2EIT {
-
+/*
     @LocalServerPort
     private int randomServerPort;
 
@@ -114,6 +114,6 @@ public class RestaurantAppFlakyE2EIT {
 
         //Then
         assertThat(restaurant).isEqualTo(Restaurant.DUMMY);
-    }
+    }*/
 
 }

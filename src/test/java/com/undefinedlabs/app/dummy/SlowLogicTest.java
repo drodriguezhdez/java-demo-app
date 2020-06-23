@@ -10,13 +10,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-@Ignore
-@RunWith(Parameterized.class)
+//@Ignore
+//@RunWith(Parameterized.class)
 public class SlowLogicTest {
 
     private static final int SIZE = 200;
 
-    @Parameterized.Parameters
+    //@Parameterized.Parameters
     public static Collection<Object[]> data() {
         final Long[][] waitTimes = new Long[SIZE][];
         for(int i = 0; i < SIZE; i++) {
@@ -32,7 +32,7 @@ public class SlowLogicTest {
         this.waitTime = waitTime;
     }
 
-    @Test
+    //@Test
     public void dummy_should_execute_slow_logic() throws InterruptedException {
         Thread.sleep(this.waitTime);
         assertThat(true).isTrue();

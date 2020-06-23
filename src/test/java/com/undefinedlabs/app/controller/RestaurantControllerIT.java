@@ -24,11 +24,12 @@ import static org.hamcrest.core.IsNull.notNullValue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@RunWith(SpringRunner.class)
+/*@RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
 @AutoConfigureMockMvc
-@TestPropertySource(locations = "classpath:application-test.properties")
+@TestPropertySource(locations = "classpath:application-test.properties")*/
 public class RestaurantControllerIT {
+/*
 
     private static final String SAMPLE_NAME = "sampleName";
     private static final String SAMPLE_DESCRIPTION = "sampleDescription";
@@ -259,5 +260,6 @@ public class RestaurantControllerIT {
         assertThat(restaurant.getLatitude()).isEqualTo(SAMPLE_LATITUDE);
         assertThat(restaurant.getLongitude()).isEqualTo(SAMPLE_LONGITUDE);
     }
+*/
 
 }
