@@ -21,11 +21,11 @@ import java.util.UUID;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.fail;
 
-@RunWith(SpringRunner.class)
+/*@RunWith(SpringRunner.class)
 @TestPropertySource(locations = "classpath:application-test.properties")
-@DataJpaTest
+@DataJpaTest*/
 public class RestaurantRepositoryIT {
-    private static final String SAMPLE_NAME = "sampleName";
+/*    private static final String SAMPLE_NAME = "sampleName";
     private static final String SAMPLE_DESCRIPTION = "sampleDescription";
     private static final String SAMPLE_LATITUDE = "sampleLatitude";
     private static final String SAMPLE_LONGITUDE = "sampleLongitude";
@@ -192,5 +192,5 @@ public class RestaurantRepositoryIT {
         assertThat(restaurant.getDescription()).isEqualTo(SAMPLE_DESCRIPTION);
         assertThat(restaurant.getLatitude()).isEqualTo(SAMPLE_LATITUDE);
         assertThat(restaurant.getLongitude()).isEqualTo(SAMPLE_LONGITUDE);
-    }
+    }*/
 }
